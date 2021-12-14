@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 4 - Tablas</title>
+</head>
+<body>
+    <!-- Etiqueta para tablas -->
+    <!-- por default una tabla no tiene bordes -->
+    <table border="1" bgcolor=#ab0>
+        <!-- una tabla esta compuesta por una cabezera o cuerpo -->
+        <!-- existe el table header que es la cabezera de mis tablas -->
+        <!-- es la parte estatica de una tabla porque basicamente tiene como datos a los titulos de la cabezera -->
+        <thead>
+            <!-- es el contenedor de mi cabezera -->
+            <!-- para definir los elementos de mi cabecera deben estar dentro de una fila -->
+            <tr>
+                <!-- una fila esta compuesta por uno o varios elementos -->
+                <!-- para definir un elementos debe estar dentro de una celda -->
+                <!-- cuando es una cabecera la etiqueta del elemento se llama th -->
+                <th>nombre</th>
+                <th>apellido</th>
+                <th>celular</th>
+                <th>correo</th>
+                <th>fecha de nacimiento</th>
+                <th>edad</th>
+            </tr>
+        </thead>
+        <!-- el cuerpo de la tabla va debajo del thead -->
+        <!-- el cuerpo de la tabla es el contenedor de los datos -->
+        <tbody>
+            <!-- al igual que thead tenia filas nuestro body tambien tiene filas -->
+            <tr>
+                <!-- los elementos  que estan dentro de una fila en el cuerpo de la tabla se llaman rd  -->
+                <td>rayker</td>
+                <td>gomez</td>
+                <td>932886752</td>
+                <td>zziel@gmail.com</td>
+                <td>30/03/1993</td>
+            </tr>
+            <tr>
+                <td>lucas </td>
+                <td>zapata</td>
+                <td>135546432</td>
+                <td>lucas@gmail.com</td>
+                <td>54/54/1988</td>
+                <td>10 años</td>
+            </tr>
+        </tbody>
+        </table>
+        <h2>tabla sin head y sin body</h2>
+        <table border="1" >
+            <tr>
+                <td>curso</td>
+                <td>profesor</td>
+                <td>cantidad de alumnos</td>
+                <td>hora</td>
+            </tr>
+            <tr>
+                <td>html</td>
+                <td>juan</td>
+                <td>50</td>
+                <td>10:00</td>
+            </tr>
+        </table>
+        <h2>tabla de usuarios con imagenes</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>nombre</th>
+                    <th>apellido</th>
+                    <th>edad</th>
+                    <th>foto</th>
+                    <th>github</th>
+                    <th>pdf</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>juan</strong></td>
+                    <td> <i>soto</i> </td>
+                    <td> <u>50</u> </td>
+                    <td>
+                        <img 
+                        src="https://imagenes.elpais.com/resizer/2KE9mHwwEFd9dxQo63W9v90xjP8=/1960x0/arc-anglerfish-eu-central-1-prod-prisa.s3.amazonaws.com/public/ZXHWLZPS4AJUEXDFDGRTCN3RMQ.jpg" 
+                        alt=""
+                        width="100">
+                    </td>
+                    <td>
+                        <a href="https://github.com/linder3hs">link de git hub</a>
+                    </td>
+                    <td>
+                        <iframe src="../../files/desafio.pdf" frameborder="0"></iframe>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>rowspan y colspan</h2>
+        <!-- se basa en poder alterar la informacion de mi tabla y poder combinar columnas -->
+        <!-- colspan sirve para poder ocupar de uno o mas espacios segun el valor que pongamos -->
+        <!-- colspan es para columnas -->
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>apellidos</th>
+                    <th>nombre</th>
+                    <th>edad</th>
+                    <th>correo</th>
+                    <!-- este th vale 2 columnas o sea,sirve para dos datos -->
+                    <th colspan="2">foto y numero</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="2">juan perez</td>
+                    <td>34</td>
+                    <td>juanperez@gmail.com</td>
+                    <!-- estos dos ultimos td van a ser parte de foto y numero, porque tienen un colspan de 2  -->
+                    <td><img src="https://i.pinimg.com/550x/72/df/30/72df30b8b200848e492625ef95dd2e50.jpg" alt="" width="100"></td>
+                    <td>1010</td>
+                </tr>
+            </tbody>
+        </table>
+</body>
+</html>

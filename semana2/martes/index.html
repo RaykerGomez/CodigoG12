@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORES</title>
+    <style>
+        /* SELECTORES SIMPLES */
+        body {
+            background: red;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+
+        ul li {
+            color: white
+        }
+       /* SELECTOR POR ATRIBUTO */
+        input[type="text"] {
+            padding: 20px;
+        }
+
+        input[disabled] {
+            background: blueviolet;
+        }
+        a[href="https://www.linkedin.com"]{
+            background-color: cadetblue;
+            color: yellow;
+        }
+        a[href="https://www.google.com"]{
+            color:white;
+            background-color:maroon;
+        }
+        /* PSEUDO - CLASES */
+        .box:hover {
+            /* SE PUEDE DAR CUALQUIER CLASE Y SE EJECUTA CUANDO 
+            EL PUNTERO ESTE SOBRE EL ELEMENTO */
+            background: mediumaquamarine;
+        }
+
+        .box:hover h2 {
+            color: white;
+        }
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 20px black
+        }
+        ul.one li:first-child {
+            color: orange;
+        }
+
+        ul.one li:last-child {
+            color: orchid;
+        }
+        ul.one li:nth-child(2) {
+            color: purple;
+        }
+
+        ul.one li:nth-child(odd) {
+            background: grey;
+        }
+
+        ul.one li:nth-child(even) {
+            background: orangered
+        }
+    </style>
+</head>
+<body>
+    <div class="box" >
+    <h2>texto</h2>
+    </div>
+    <ul class="one" >
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <style>
+        .two li:nth-child(2n+1) {
+            background: yellowgreen;
+        }
+    </style>
+    <ul class="two" >
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+
+    <input type="text">
+    <input type="checkbox">
+    <input type="password">
+    <input type="text" disabled>
+    <a href="https://www.linkedin.com">linkedin</a>
+    <a href="https://www.google.com">google</a>
+    <a href="https://www.youtube.com">youtube</a>
+<style>
+    /* PSEUDOELEMENTOS */
+    /* h2::before {
+        content: "''";
+    }
+    h2::after {
+        content: "''";
+    } */
+    h2::first-letter {
+        font-size: 70px;
+    }
+    p::first-line {
+        background: green;
+    }
+</style>
+<h2>TITULO DE PAGINA HOLA MUNDO</h2>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt modi neque sit nemo repudiandae doloremque, explicabo corrupti atque voluptatem fuga similique mollitia facilis nesciunt consectetur delectus, eum a, quidem eveniet?</p>
+<style>
+    ul > li {
+        color: blue;
+    }
+</style>
+<ul>
+    <li>unordereditem</li>
+    <li>unordereditem
+        <ol>
+            <li>item1</li>
+            <li>item2</li>
+        </ol>
+    </li>
+</ul>
+<style>
+    h2+p {
+        background: cadetblue;
+    }
+
+</style>
+<h2>titulo</h2>
+<p>lorem</p>
+<p>lorem</p>
+<p>lorem</p>
+
+<h2>titulo</h2>
+<p>lorem</p>
+
+<h3>titulo</h3>
+<p>lorem</p>
+<p>lorem</p>
+<p>lorem</p>
+
+<h2>titulo</h2>
+<p>lorem</p>
+
+<style>
+     h3~p {
+        background: chartreuse;
+    }
+
+    *::selection {
+        background: grey;
+    }
+</style>
+
+<!-- SELECTOR MULTIPLE -->
+<style>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+       color: orangered;
+    }
+</style>
+<h1>h1</h1>
+<h2>h2</h2>
+<h3>h3</h3>
+<h4>h4</h4>
+<h5>h5</h5>
+<h6>h6</h6>
+</body>
+</html>

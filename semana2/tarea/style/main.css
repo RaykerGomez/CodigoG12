@@ -1,0 +1,176 @@
+/* 
+GLOBAL
+Estilos globales aca iran los selectores de etiquetas globales
+*/
+body {
+    font-size: 16px;
+    font-family: arial; 
+}
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 33px;
+    padding-bottom: 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main p {
+     margin-bottom: 40px;
+     line-height: 26px; 
+}
+
+section {
+    margin: 33px;
+}
+/* 
+ESTILOS DEL HEADER
+Aqui iran los estilos del header
+ */
+.header {
+    background:#00AF1C;
+    padding: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.header ul {
+    display: flex;
+    margin-right: 30px;
+}
+
+.header li {
+    margin-left:30px;
+}
+/* 
+HOME
+Aqui iran estilos de la seccion home
+ */ 
+
+.home {
+    color: #3B06D2;
+}
+.images-home {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SERVICIOS
+Aqui iran los estilos de la seccion servicios 
+*/
+.servicios {
+    color: #D206B2;
+}
+.images-servicios {
+    display: flex;
+    justify-content: space-between;
+}
+.lista-servicios {
+    font-size: 18px;
+    list-style: inside;
+    line-height: 44px;
+    font-weight: bold;
+}
+.servicio1 {
+    color: red;
+}
+.servicio2 {
+    color: blue;
+} 
+.servicio3 {
+    color: orange;
+}
+.servicio4 {
+    color: turquoise;
+}
+/* PORTAFOLIO
+Aqui iran los estilos de portafolio
+ */
+ .portafolio {
+     color: #AAD206;
+ }
+ .images-portafolio {
+     display: flex;
+     justify-content: space-between;
+ }
+ .lista-portafolio {
+    font-size: 18px;
+    list-style: inside;
+    line-height: 44px;
+    font-weight: bold;
+ }
+ .portafolio1 {
+     color:rgba(149, 151, 18, 0.836)
+ }
+ .portafolio2 {
+     color: rgba(218, 0, 0, 0.904);
+ }
+ .portafolio3 {
+     color: rgb(11, 11, 104);
+ }
+ .portafolio4 {
+     color: rgb(94, 141, 0);
+ }
+
+ /* CONTACTO
+ Aqui iran los estilos de la seccion contacto
+ */
+ .contacto {
+     color: #06D2C6;
+ }
+ .datos {
+     display: flex;
+     justify-content: center; 
+ }
+.nombre-apellido {
+    width: 100%;
+    height: 88px;
+    margin-bottom: 40px;
+    padding-left: 25px;
+    font-weight: bold;
+}
+.sobre-ti {
+    display: flex;
+    justify-content: center;
+}
+.detalles {
+    width: 100%;
+    height: 214px;
+    padding-top: 19px;
+    padding-left: 25px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.enviar {
+    padding-left: 69px;
+    padding-right: 69px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: #22A900;
+    border: 1px solid #22A900;
+    font-size: 22px;
+    background: white;
+}
+
+ /* FOOTER
+ Aqui ira los estilos del footer
+  */
+  footer {
+      background: #00AF1C;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      padding: 38px;
+  }
